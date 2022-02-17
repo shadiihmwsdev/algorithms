@@ -2,8 +2,7 @@ def getGreatestFamilyNum(num):
 
     """Return the greated number in a family of the given number"""
 
-    number = (sorted(str(num), reverse=True))
-    number = int(''.join(number))
+    number = int(''.join((sorted(str(num), reverse=True))))
     newNum = -1 if number > 100000000 else number 
     print('Greatest non-negative number in {0} family is {1}'.format(num, newNum))
 
@@ -13,7 +12,7 @@ print(type (getGreatestFamilyNum(312)))
 
 def convertIntToBinary(num1, num2):
 
-    """Return binary of a positive integer"""
+    """Return sum of 1s in binary of an integer"""
 
     num = num1 * num2
     print('Using bin(), Binary of {0} = {1}'.format(num, bin(num1 * num2)))
